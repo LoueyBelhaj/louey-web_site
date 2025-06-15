@@ -34,10 +34,10 @@ if (isset($conn)) {
         $stmt->execute();
         $orders = $stmt->get_result();
     } else {
-        die("<p>خطأ في تحضير الاستعلام: " . htmlspecialchars($conn->error) . "</p>");
+        die("<p> " . htmlspecialchars($conn->error) . "</p>");
     }
 } else {
-    die("<p>خطأ: لا يوجد اتصال بقاعدة البيانات.</p>");
+    die("<p</p>");
 }
 ?>
 
